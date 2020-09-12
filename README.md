@@ -1,2 +1,51 @@
 # Type-Writer
 Android Text View Type Writer.
+
+## Want all the Type-Writers of the whole activity to move in order?
+You can use the following code in your 'Activity'(kotlin):
+
+```kotlin
+private var index: Int = 1
+
+override fun onCreate(savedInstanceState: Bundle?) {
+    super.onCreate(savedInstanceState)
+    setContentView(R.layout.act_ld) // You can replace it with your own layout
+
+    val mHandler = Handler()
+    val runTypeWriter: Runnable = object : Runnable {
+        override fun run() {
+            val tw: TypeWriter = when (index) {
+                1 -> tw_title
+                2 -> tw_subtitle
+                else -> return
+            }
+            tw.startAnimation()
+            index++
+            mHandler.postDelayed(this, tw.needTime())
+        }
+    }
+
+    mHandler.post(runTypeWriter)
+}
+```
+
+And then, here is part of the code of 'act_ld.xml':
+
+```xml
+<com.shabby.seamless.widget.TypeWriter
+    android:id="@+id/tw_title"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/app_title"
+    android:textColor="@color/white"
+    android:textSize="36sp"
+    android:textStyle="bold" />
+
+<com.shabby.seamless.widget.TypeWriter
+    android:id="@+id/tw_subtitle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="32dp"
+    android:text="@string/app_subtitle"
+    android:textColor="@color/white" />
+```
