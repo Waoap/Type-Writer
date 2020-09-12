@@ -1,7 +1,15 @@
 # Type-Writer
 Android Text View Type Writer.
 
-## Want all the Type-Writers of the whole activity to move in order?
+## How to use:
+Copy or download the file to the corresponding place(Don't ask me where is it, 'Google' it).
+
+## Some Attrs:
+**delay:** *Customize the interval between every two words displayed by Type-Writer*
+
+**autoStart:** *Seeing the name of a thing one thinks of its function...*
+
+## Want all the Type-Writer of the whole activity to move in order?
 You can use the following code in your 'Activity'(kotlin):
 
 ```kotlin
