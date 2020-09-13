@@ -40,7 +40,7 @@ override fun onCreate(savedInstanceState: Bundle?) {
 And then, here is part of the code of 'act_ld.xml':
 
 ```xml
-<com.shabby.seamless.widget.TypeWriter
+<com.xxx.xxx.TypeWriter
     android:id="@+id/tw_title"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
@@ -49,7 +49,7 @@ And then, here is part of the code of 'act_ld.xml':
     android:textSize="36sp"
     android:textStyle="bold" />
 
-<com.shabby.seamless.widget.TypeWriter
+<com.xxx.xxx.TypeWriter
     android:id="@+id/tw_subtitle"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
