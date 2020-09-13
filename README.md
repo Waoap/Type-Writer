@@ -9,7 +9,7 @@ Copy or download the file to the corresponding place(Don't ask me where is it, '
 
 **autoStart:** *Seeing the name of a thing one thinks of its function...*
 
-## Want all the Type-Writer of the whole activity to move in order?
+## Want all the Type-Writer of the whole activity to display in order?
 You can use the following code in your 'Activity'(kotlin):
 
 ```kotlin
