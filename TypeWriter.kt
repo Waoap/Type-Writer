@@ -1,10 +1,9 @@
-package com.shabby.seamless.widget
+package com.xxx.xxx
 
 import android.content.Context
 import android.os.Handler
 import android.util.AttributeSet
 import androidx.appcompat.widget.AppCompatTextView
-import com.shabby.seamless.R
 
 /**
  * Type Writer
@@ -16,7 +15,7 @@ import com.shabby.seamless.R
  */
 class TypeWriter(context: Context, attrs: AttributeSet?, defStyleAttr: Int) :
     AppCompatTextView(context, attrs, defStyleAttr) {
-    private var mText: CharSequence = text ?: ""
+    private var mText: CharSequence = text ?: "" // Text to be displayed
     private var mIndex = 0
     private var mDelay: Long = 150 // Default 150ms delay
     private var mTypeArray = context.obtainStyledAttributes(attrs, R.styleable.TypeWriter)
@@ -53,6 +52,7 @@ class TypeWriter(context: Context, attrs: AttributeSet?, defStyleAttr: Int) :
         mHandler.postDelayed(characterAdder, mDelay)
     }
 
+    // The time-consuming of animation
     fun needTime(): Long {
         return (mText.length + 1) * mDelay
     }
