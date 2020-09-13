@@ -1,5 +1,5 @@
 # Type-Writer
-Android Text View Type Writer.
+Android Text View Type Writer.(Based on Antarix's project 'https://gist.github.com/Antarix/6388606')
 
 ## How to use:
 Copy or download the file to the corresponding place(Don't ask me where is it, 'Google' it).
