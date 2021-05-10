@@ -1,10 +1,10 @@
 # Type-Writer
 Android Text View Type Writer.(Based on Antarix's project 'https://gist.github.com/Antarix/6388606')
 
-## How to use:
+## How to use?
 Copy or download the file to the corresponding place(Don't ask me where, 'Google' it).
 
-## Some Attrs:
+## Some Attrs?
 **delay:** *Customize the interval between every two words displayed by Type-Writer*
 
 **autoStart:** *Seeing the name of a thing one thinks of its function...*
